@@ -5,7 +5,7 @@ var item_scenes := [
 ]
 func _ready() -> void:
 	get_node("Timer").timeout.connect(_on_timer_timeout)
-	
+
 func _on_timer_timeout() -> void:
 	pass
 	var random_item_scene: PackedScene = item_scenes.pick_random()
